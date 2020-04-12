@@ -1,0 +1,7 @@
+Watching for file changes with StatReloader
+Not Found: /favicon.ico
+Not Found: /adin
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+/home/vlad/paint_guess/guessapp/usersJWT/admin.py changed, reloading.
+Watching for file changes with StatReloader
