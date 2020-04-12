@@ -1,7 +1,16 @@
+None
+Bad Request: /users/login/
+/home/vlad/paint_guess/guessapp/guessapp/settings.py changed, reloading.
 Watching for file changes with StatReloader
-Not Found: /favicon.ico
-Not Found: /adin
-Not Found: /favicon.ico
-Not Found: /favicon.ico
-/home/vlad/paint_guess/guessapp/usersJWT/admin.py changed, reloading.
+/home/vlad/paint_guess/guessapp/guessapp/settings.py changed, reloading.
+Watching for file changes with StatReloader
+/home/vlad/paint_guess/guessapp/guessapp/settings.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Method Not Allowed: /users/login/
+vlad
+Unauthorized: /users/
+Unauthorized: /users/
+Method Not Allowed: /users/
+/home/vlad/paint_guess/guessapp/usersJWT/urls.py changed, reloading.
 Watching for file changes with StatReloader
