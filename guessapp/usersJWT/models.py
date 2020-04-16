@@ -22,7 +22,8 @@ class UserAccountManager(BaseUserManager):
 
 		if not password:
 			raise ValueError("Password must be provided")
-
+		
+		
 		email = self.normalize_email(email)
 		user = self.model(username=username, email=email, **kwargs)
 		user.set_password(password)

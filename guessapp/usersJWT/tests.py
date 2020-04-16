@@ -19,7 +19,7 @@ class UserTokenTest(APITestCase):
             "email": self.user.email,
             "password": "1488"
         }
-        response  = c.post('http://127.0.0.1:8000/users/login/', json.dumps(user_dict),content_type="application/json")
+        response  = c.post('/users/login/', json.dumps(user_dict),content_type="application/json")
         token = response.data['token']
         self.assertTrue(status.is_success(response.status_code)) #Check if user has been logged in 
         self.assertTrue(token) #Check if token has been created 
@@ -31,11 +31,10 @@ class UserTokenTest(APITestCase):
             "email": self.user.email,
             "password": "1488"
         }
-        response  = c.post('http://127.0.0.1:8000/users/login/', json.dumps(user_dict),content_type="application/json")
+        response  = c.post('/users/login/', json.dumps(user_dict),content_type="application/json")
         
         token = response.data['token']
 
-        response = c.get('http://127.0.0.1:8000/users/logout/', HTTP_AUTHORIZATION='Token {}'.format(token))
-        print(response)
+        response = c.get('/users/logout/', HTTP_AUTHORIZATION='Token {}'.format(token))
 
         self.assertFalse(AuthToken.objects.filter(digest=token))
